@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <script src="https://cdn.Tailwinds.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.confing = {
         theme: {
@@ -20,42 +20,42 @@
     </script>
     <title>Tailwinds</title>
 </head>
-<body>
+<body class="overflow-hidden ">
    
-        <div class="flex flex-row-reverse items-center"  >
-          <div class="flex justify-center flex-col">
+        <div class="flex flex-row-reverse items-center justify-between "  >
+          <div class="flex justify-center flex-col px-4 py-36 w-full ">
             <div>
-              <img src="io.ubitex.ubitex_108eba55-f112-4c4f-aaa1-15a3d1e84c86.webp" alt="لوگو یوبیتکس" >
+              <img src="io.ubitex.ubitex_108eba55-f112-4c4f-aaa1-15a3d1e84c86.webp" alt="لوگو یوبیتکس" class="w-10 h-10 mb-2" >
               </div>
-            <div>
-                <h1>Welcome Back!</h1>
-                <p>Enter to get unlimited access to data & information.</p>
+            <div class="flex flex-col gap-2">
+                <h1 class="text-2xl">Welcome Back!</h1>
+                <p class="text-base text-gray-500">Enter to get unlimited access to data & information.</p>
+            </div>
+            <div class="flex flex-col gap-2 ">
+                <h3 class="font-bold ">Email <span class="text-red-400">*</span></h3>
+                <input type="text" placeholder="    Enter your mail address" required class="flex-initial w-1/2 px-1 py-2 mt-1 mb-1 rounded-md border-2-solid-gray-800 "/>
+            </div>
+            <div class="flex flex-col gap-2">
+                <h3 class="font-bold ">Password <span class="text-red-400">*</span></h3>
+                <input type="password" placeholder="    Enter password" required maxlength="8" class=" flex-initial w-1/2 px-1 py-2 mt-1 rounded-md border-2-solid-gray-400"/>
+            </div>
+            <div class="flex justify-between  text-xs mt-3 mb-12 cursor-pointer">
+                <h3 class="font-bold "><input type="checkbox">  Remember me</h3>
+                <h3  class="text-fuchsia-700 font-bold mr-96">Forgot your password?</h3>
             </div>
             <div >
-                <h3>Email <span>*</span></h3>
-                <input type="text" placeholder="    Enter your mail address" required/>
+                <input type="submit" value="login" class="border-2-solid-fuchsia-500 rounded-md text-lg bg-fuchsia-700 text-white w-1/2 h-10 mb-8 cursor-pointer" />
             </div>
-            <div>
-                <h3>Password <span>*</span></h3>
-                <input type="password" placeholder="    Enter password" required maxlength="8"/>
+            <div class="flex justify-evenly items-center w-96 ">
+                <div class="w-56 h-px bg-gray-400"></div>
+                <h5 class="flex justify-center ">Or login with</h5>
+                <div class="w-56 h-px bg-gray-400"></div>
             </div>
-            <div >
-                <h3><input type="checkbox">  Remember me</h3>
-                <h3 >Forgot your password?</h3>
-            </div>
-            <div >
-                <input type="submit" value="login"  />
-            </div>
-            <div >
-                <div ></div>
-                <h5>Or login with</h5>
-                <div ></div>
-            </div>
-            <div>
-              <h4>Don't have an acount ? <a href="#">Register here</a></h4>
+            <div class="ml-24 mt-5">
+              <h4>Don't have an acount ? <a href="#" class="text-fuchsia-700">Register here</a></h4>
             </div>
           </div>
-          <div >
+          <div  >
             <img src="bitcoin.jpg" alt="CryptoCurrency" />
           </div>
         </div>
